@@ -1,5 +1,5 @@
 <students>
-	<student number="1" xyz="a">
+	<student id="1">
 		<name> Alamin </name>
 		<age> 11 </age>
 		<email>alamin@aiub.edu</email>
