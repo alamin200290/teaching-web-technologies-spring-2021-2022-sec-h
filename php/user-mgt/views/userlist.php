@@ -22,18 +22,18 @@
 			<td>123</td>
 			<td>alamin@aiub.edu</td>
 			<td>
-				<a href="edit.php">Edit</a> |
-				<a href="delete.php">Delete</a>
+				<a href="edit.php?id=1">Edit</a> |
+				<a href="delete.php?id=1">Delete</a>
 			</td>
 		</tr>
 		<tr>
 			<td>2</td>
-			<td>Al Amin</td>
+			<td>xyz</td>
 			<td>123</td>
 			<td>alamin@aiub.edu</td>
 			<td>
-				<a href="edit.php">Edit</a> |
-				<a href="delete.php">Delete</a>
+				<a href="edit.php?id=2">Edit</a> |
+				<a href="delete.php?id=2">Delete</a>
 			</td>
 		</tr>
 	</table>

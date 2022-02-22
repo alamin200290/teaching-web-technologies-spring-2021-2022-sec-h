@@ -1,7 +1,8 @@
 <?php 
 	session_start();
-
-	if(isset($_COOKIE['status'])){
+	if(!isset($_COOKIE['status'])){
+		header('location: login.php');
+	}
 ?>
 
 <html>
@@ -17,9 +18,3 @@
 	
 </body>
 </html>
-
-<?php
-	}else{
-		header('location: login.php');
-	}
-?>
