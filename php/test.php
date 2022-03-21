@@ -1,5 +1,20 @@
 <?php 
 
+	//print_r($_GET);
+	//print_r($_REQUEST);
+
+	if(isset($_REQUEST['submit'])){
+		
+		if($_REQUEST['username'] == null){
+			echo "invalid username...";
+		}else{
+			echo "success";
+		}
+	}
+
+	//echo $_GET['id'];
+
+
 	//print("Hello from PHP");
 	//echo "test..."."another content...";
 
@@ -44,7 +59,7 @@
 		
 	}*/
 
-	foreach ($students as $s) {
+	/*foreach ($students as $s) {
 		echo "<h1>".$s['name']."|".$s['email']."</h1>";
-	}
+	}*/
 ?>

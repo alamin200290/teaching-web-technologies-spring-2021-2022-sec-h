@@ -16,26 +16,31 @@
 			<td>Email</td>
 			<td>Action</td>
 		</tr>
-		<tr>
-			<td>1</td>
-			<td>Al Amin</td>
-			<td>123</td>
-			<td>alamin@aiub.edu</td>
-			<td>
-				<a href="edit.php?id=1">Edit</a> |
-				<a href="delete.php?id=1">Delete</a>
-			</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>xyz</td>
-			<td>123</td>
-			<td>alamin@aiub.edu</td>
-			<td>
-				<a href="edit.php?id=2">Edit</a> |
-				<a href="delete.php?id=2">Delete</a>
-			</td>
-		</tr>
+		<?php 
+
+			$file = fopen('../model/user.txt', 'r');
+			
+			while(!feof($file)){
+				$user = fgets($file);
+				$userArray = explode("|", $user);
+			?>
+
+				<tr>
+					<td><?=$userArray[0]?></td>
+					<td><?=$userArray[1]?></td>
+					<td><?=$userArray[2]?></td>
+					<td><?=$userArray[3]?></td>
+					<td>
+						<a href="edit.php?id=<?=$userArray[0]?>">Edit</a> |
+						<a href="delete.php?id=<?=$userArray[0]?>">Delete</a>
+					</td>
+				</tr>
+		
+		<?php	
+			}
+
+		?>
+
 	</table>
 </body>
 </html>
